@@ -78,5 +78,9 @@ export declare class ProjectConfig {
      * Enable hash router.
      */
     useHashRouter?: boolean;
+    /**
+     * Using MiniCssExtractPlugin or not
+     */
+    MiniCssExtractPlugin?: boolean;
 }
 export {};
