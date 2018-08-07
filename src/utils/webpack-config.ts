@@ -65,7 +65,7 @@ export const getWebpackConfig = async (opts: IOptions) => {
    * Helper
    */
   function extraCssInProd(...loaders: any[]) {
-    if (globalState.isDevelopment) {
+    if (globalState.isDevelopment || globalState.projectConfig.MiniCssExtractPlugin) {
       return [styleLoader, ...loaders];
     } else {
       return [MiniCssExtractPlugin.loader, ...loaders];
