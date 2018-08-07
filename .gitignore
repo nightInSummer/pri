@@ -4,3 +4,4 @@ dist
 built
 coverage
 .nyc_output
+.idea/
